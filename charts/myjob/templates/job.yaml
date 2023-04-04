@@ -8,7 +8,7 @@ spec:
       containers:
       - name: perl-container
         image: perl:{{ .Values.perl_version }}
-        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
+        command: ["perl",  "-Mbignum=bpi", "-wle", "print 'Hello World!\n'"]
         imagePullPolicy: Always
       restartPolicy: Never
   backoffLimit: 4
