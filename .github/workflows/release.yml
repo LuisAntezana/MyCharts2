@@ -25,6 +25,11 @@ jobs:
 
       - name: Install Helm
         uses: azure/setup-helm@v3
+      
+      - name: Helm Package
+        run: |
+          helm package ./charts/myjob/ -d .cr-release-packages
+          mv ./.cr-release-packages/myjob-*.tgz ./.cr-release-packages/chart.tgz
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
@@ -32,3 +37,4 @@ jobs:
           skip_packaging: true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_RELEASE_NAME_TEMPLATE: "{{ .Version }}"
