@@ -36,5 +36,5 @@ jobs:
         with:
           skip_packaging: true
         env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_TOKEN: "${{ secrets.PAT }}"
           CR_RELEASE_NAME_TEMPLATE: "v{{ .Version }}"
