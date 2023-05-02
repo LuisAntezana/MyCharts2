@@ -3,6 +3,16 @@ entries:
   myjob:
   - apiVersion: v2
     appVersion: branch1-blablabla_xd
+    created: "2023-05-02T21:29:12.04835937Z"
+    description: A Helm chart for Kubernetes
+    digest: 340cee3edc94975a82834dd247481bbd10700019a56fc10f8f087bdc69bcac06
+    name: myjob
+    type: application
+    urls:
+    - https://github.com/LuisAntezana/MyCharts2/releases/download/1.0.5/helm-chart.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: branch1-blablabla_xd
     created: "2023-04-05T00:56:25.402239043Z"
     description: A Helm chart for Kubernetes
     digest: 137e81659a24821c610ccd541f1d39100bd84b7d159803764db6057c6318751c
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/LuisAntezana/MyCharts2/releases/download/myjob-1.0.0/myjob-1.0.0.tgz
     version: 1.0.0
-generated: "2023-04-05T00:56:25.402253144Z"
+generated: "2023-05-02T21:29:12.04838527Z"
