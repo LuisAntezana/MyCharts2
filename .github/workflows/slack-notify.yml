@@ -1,9 +1,9 @@
 name: Notify Slack on Release
 
 on:
-  release:
-    types:
-    - published
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   notify_slack:
