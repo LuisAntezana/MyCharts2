@@ -2,8 +2,6 @@ name: Publish
 
 on:
   push:
-    branches:
-      - main
     tags:
       - '**'           # does NOT trigger when release author is github-actions
   release:
